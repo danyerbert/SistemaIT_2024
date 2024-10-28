@@ -1,0 +1,8 @@
+#DirectoryIndex index.php
+#RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}\.php -f
+#RewriteRule ^(.*)$ $1.php
+Options ALL -Indexes
+ErrorDocument 404 /SIT/404.html
+ErrorDocument 403 /SIT/403.html
